@@ -10,6 +10,8 @@ public class VerificacionTecnicnaVehicular : MonoBehaviour
     public int vencimientoAuto;
     public int HCAuto;
 
+    float kilometrajeAuto;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,16 @@ public class VerificacionTecnicnaVehicular : MonoBehaviour
             return;
         }
 
+
+    kilometrajeAuto = kmAuto/(2025 - modeloAuto);
+
+    if(kilometrajeAuto < 10000)
+    {
+        Debug.Log("VTV otorgada por 2 años");
+    }
+    else{
+        Debug.Log("VTV otorgada por un año");
+    }
 
 
     }
