@@ -21,7 +21,7 @@ public class VerificacionTecnicnaVehicular : MonoBehaviour
             return;
         }
 
-        if(modeloAuto < 1900 && modeloAuto > 2025)
+        if(modeloAuto < 1900 || modeloAuto > 2025)
         {
             Debug.Log("VTV no aprobada");
             return;
@@ -33,13 +33,13 @@ public class VerificacionTecnicnaVehicular : MonoBehaviour
             return;
         }
 
-        if(vencimientoAuto > 2025 && vencimientoAuto < modeloAuto)
+        if(vencimientoAuto > 2025 || vencimientoAuto < modeloAuto)
         {
             Debug.Log("VTV no aprobada");
             return;
         }
 
-        if(HCAuto < 5 && HCAuto > 100)
+        if(HCAuto < 5 || HCAuto > 100)
         {
             Debug.Log("VTV no aprobada");
             return;
@@ -52,8 +52,9 @@ public class VerificacionTecnicnaVehicular : MonoBehaviour
     {
         Debug.Log("VTV otorgada por 2 años");
     }
-    else{
-        Debug.Log("VTV otorgada por un año");
+    else if(kilometrajeAuto > 10000)
+    {
+        Debug.Log("VTV otorgada por 1 año");
     }
 
 

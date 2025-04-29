@@ -223,11 +223,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141223cefeda0f240af9383fb2f138b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patenteAuto: 
-  modeloAuto: 0
-  kmAuto: 0
-  vencimientoAuto: 0
-  HCAuto: 0
+  patenteAuto: AAAAAA
+  modeloAuto: 2021
+  kmAuto: 50000
+  vencimientoAuto: 2023
+  HCAuto: 60
 --- !u!4 &1028574937
 Transform:
   m_ObjectHideFlags: 0
